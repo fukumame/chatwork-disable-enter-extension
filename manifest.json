@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Chatwork Disable Enter Key",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Chatworkのメッセージ入力時のEnter Keyを無効化するプラグインです",
   "content_scripts": [
     {
       "matches": ["https://kcw.kddi.ne.jp/*", "https://www.chatwork.com/*"],
-      "js": ["jquery-3.2.1.min.js", "script.js"]
+      "js": ["jquery-3.2.1.min.js", "script.js"],
+      "run_at": "document_end"
     }
   ]
 }
