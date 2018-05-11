@@ -1,10 +1,2 @@
-const content = `
-function disableSendAction() {
-  $('#_chatText').unbind('keyup');
-}
-disableSendAction();
-`;
-
-var script = document.createElement("script");
-script.textContent = content;
-document.body.appendChild(script);
+const disableEnterAction = function() { $('#_chatText').unbind('keyup'); };
+setTimeout(disableEnterAction, 3000);
